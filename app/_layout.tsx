@@ -17,7 +17,7 @@ import { persistor, store } from "@/redux/store";
 import { ConfigProvider } from "@/providers/configProvider";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { PersistGate } from "redux-persist/integration/react";
-import "../config/i18n";
+// import "../config/i18n";
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 

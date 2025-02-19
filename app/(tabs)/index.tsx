@@ -24,35 +24,35 @@ import { Homeproducts } from "@/components/homeproducts";
 
 export default function HomeScreen() {
   return (
-    <SafeAreaProvider>
-      <SafeAreaView className=" flex-1 bg-[#fff]   ">
-        {/* <View className=" h-full w-full"> */}
-        <StatusBar
-          // animated={true}
-          // backgroundColor="#000"
-          // barStyle={"dark-content"}
-          // backgroundColor={""}
-          barStyle={"dark-content"}
-          networkActivityIndicatorVisible={true}
-          showHideTransition={"slide"}
-          hidden={false}
-          animated={true}
-          className="text-black"
-        />
-        <View className=" w-[90%] pb-3 mx-auto  ">
-          <Headertop />
-          <Search />
-        </View>
+    // <SafeAreaProvider>
+    <SafeAreaView className=" flex-1 bg-[#fff]   ">
+      {/* <View className=" h-full w-full"> */}
+      <StatusBar
+        // animated={true}
+        // backgroundColor="#000"
+        // barStyle={"dark-content"}
+        // backgroundColor={""}
+        barStyle={"dark-content"}
+        networkActivityIndicatorVisible={true}
+        showHideTransition={"slide"}
+        hidden={false}
+        animated={true}
+        className="text-black"
+      />
+      <View className=" w-[90%] pb-3 mx-auto  ">
+        <Headertop />
+        <Search />
+      </View>
 
-        <ScrollView className="mt-[10px] py-[15px]  bg-gray-50 ">
-          <View className="bg-white  rounded-[15px]">
-            <Slider />
-            <CategoriesBar />
-            <Homeproducts />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </SafeAreaProvider>
+      <ScrollView className="mt-[10px] py-[15px]  bg-gray-50 ">
+        <View className="bg-white  rounded-[15px]">
+          <Slider />
+          <CategoriesBar />
+          <Homeproducts />
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+    // </SafeAreaProvider>
   );
 }
 
