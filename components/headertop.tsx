@@ -299,7 +299,12 @@ export const Headertop = () => {
         <HapticTab
           onPress={handleCall}
           className="w-[32px] h-[32px] bg-[#F2F3F5] flex flex-row justify-center items-center rounded-[12px]">
-          <IconSymbol style={{}} color="black" name="phone.arrow.up.right" />
+          {/* <IconSymbol style={{}} color="black" name="phone.arrow.up.right" /> */}
+          <Image
+            source={require("@/assets/icons/phone.arrow.up.right.svg")}
+            width={20}
+            height={20}
+          />
         </HapticTab>
       </View>
     </View>
