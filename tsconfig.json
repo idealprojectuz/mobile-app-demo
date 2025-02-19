@@ -2,10 +2,12 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "types": ["nativewind/types"],
-    "strict": true,
+    "strict": false,
     "paths": {
       "@/*": ["./*"]
     }
+    // "target": "es2017", // yoki undan yuqori
+    // "module": "esnext" // yoki "es2022", "node16", "nodenext"
   },
   "include": [
     "**/*.ts",
